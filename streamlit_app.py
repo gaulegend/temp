@@ -31,5 +31,5 @@ dob = st.date_input("Select Date", min_value= date(1995, 6, 29))
 st.write(f"Your date of birth : {dob}")
 
 today = date.today()
-age = today - dob - ((today.month, today.day) < (dob.month, dob.day))
+age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
 st.write(f"Your age is: {age}")
