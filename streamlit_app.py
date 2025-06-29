@@ -17,5 +17,5 @@ if st.checkbox('Check me'):
   st.write('you\'ve checked an item')
 
 radio_item = st.radio('Radio button', items)
-st.write(f"You've select {select_item}!")
+st.write(f"You've select {radio_item}!")
 
