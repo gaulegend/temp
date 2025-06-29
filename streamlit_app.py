@@ -12,3 +12,6 @@ st.success(f"You've select {select_item}!")
 
 if st.button('button'):
   st.write('you\'ve clicked the button')
+
+if st.checkbox('Check me'):
+  st.write('you\'ve checked an item')
