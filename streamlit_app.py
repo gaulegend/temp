@@ -1,5 +1,5 @@
 import streamlit as st
-from datetime import date
+import datetime import date
 
 st.title('This is title')
 st.header("This is header")
@@ -29,3 +29,5 @@ if name:
 
 dob = st.date_input("Select Date", min_value= date(1995, 6, 29))
 st.write(f"Your date of birth : {dob}")
+age = date.today() - dob
+st.write(f"Your age is: {age}")
