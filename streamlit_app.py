@@ -15,3 +15,5 @@ if st.button('button'):
 
 if st.checkbox('Check me'):
   st.write('you\'ve checked an item')
+
+st.radio('Radio button', items)
