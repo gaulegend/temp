@@ -28,4 +28,4 @@ if name:
         st.write(f"This is your text: {name}")
 
 dob = st.date_input("Select Date")
-st.write(f"Your date of birth : {dob}"
+st.write(f"Your date of birth : {dob}")
