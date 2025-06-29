@@ -1,5 +1,5 @@
 import streamlit as st
-import datetime import date
+from datetime import date
 
 st.title('This is title')
 st.header("This is header")
