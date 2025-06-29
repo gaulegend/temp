@@ -20,3 +20,5 @@ radio_item = st.radio('Radio button', items)
 st.write(f"You've select {radio_item}!")
 
 st.slider('This is slider', 0,10,5)
+
+st.number_input("This is number input", min_value= 0, max_value= 10)
