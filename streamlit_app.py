@@ -23,9 +23,9 @@ st.slider('This is slider', 0,10,5)
 
 st.number_input("This is number input", min_value= 0, max_value= 10)
 
-name= st.text_input("This is text input:", min_value= "1995/06/29")
+name= st.text_input("This is text input:")
 if name:
         st.write(f"This is your text: {name}")
 
-dob = st.date_input("Select Date")
+dob = st.date_input("Select Date", min_value= "1995/06/29")
 st.write(f"Your date of birth : {dob}")
