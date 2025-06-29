@@ -19,3 +19,4 @@ if st.checkbox('Check me'):
 radio_item = st.radio('Radio button', items)
 st.write(f"You've select {radio_item}!")
 
+st.slider('This is slider', 0,10)
