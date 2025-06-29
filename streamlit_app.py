@@ -23,7 +23,7 @@ st.slider('This is slider', 0,10,5)
 
 st.number_input("This is number input", min_value= 0, max_value= 10)
 
-name= st.text_input("This is text input:")
+name= st.text_input("This is text input:", min_value= "1995/06/29")
 if name:
         st.write(f"This is your text: {name}")
 
