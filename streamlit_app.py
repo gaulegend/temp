@@ -25,4 +25,4 @@ st.number_input("This is number input", min_value= 0, max_value= 10)
 
 name= st.text_input("This is text input:)
 if name:
-        st.write(f'This is your text: {name}')
+        st.write(f'This is your text: {name}")
