@@ -1,3 +1,4 @@
+# Chapter 1
 import streamlit as st
 from datetime import date
 
@@ -10,6 +11,7 @@ select_item = st.selectbox("This is dropdown box", items)
 
 st.success(f"You've select {select_item}!")
 
+# Chapter 2
 if st.button('button'):
   st.write('you\'ve clicked the button')
 
@@ -33,3 +35,18 @@ st.write(f"Your date of birth : {dob}")
 today = date.today()
 age = today.year - dob.year - ((today.month, today.day) < (dob.month, dob.day))
 st.write(f"Your age is: {age}")
+
+# Chapter 3
+col1, col2 = st.columns(2)
+
+with col1:
+  st.subheader("Column 1")
+
+with col2:
+  st.subheader("Column 2")
+
+
+
+
+
+
