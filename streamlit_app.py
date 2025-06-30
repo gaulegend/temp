@@ -80,7 +80,8 @@ with st.expander("Show Dataframe"):
   col1, col2 = st.columns(2)
   if show_stats:
     col1 = st.write(df.describe())
-    
+
+    col2 = 
     cities = df["City"].unique()
     select_city = st.selectbox("Select city", cities)
     if select_city:
