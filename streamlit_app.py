@@ -1,6 +1,7 @@
 # Chapter 1
 import streamlit as st
 from datetime import date
+import pandas as pd
 
 st.title('This is title')
 st.header("This is header")
@@ -66,3 +67,23 @@ with st.expander("This is an expander"):
     3. Line three
     """
   )
+
+# Chapter 4
+st.file_uploader("Upload your file", type= ['csv'])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
