@@ -71,9 +71,10 @@ with st.expander("This is an expander"):
 # Chapter 4
 st.file_uploader("Upload your file", type= ['csv'])
 
+df = pd.read_csv("https://raw.githubusercontent.com/hiteshchoudhary/Streamlit-course/refs/heads/master/chai_sales.csv")
 
-
-
+with st.expander("Show Dataframe"):
+  st.dataframe(df)
 
 
 
