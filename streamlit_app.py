@@ -73,9 +73,10 @@ st.file_uploader("Upload your file", type= ['csv'])
 
 df = pd.read_csv("https://raw.githubusercontent.com/hiteshchoudhary/Streamlit-course/refs/heads/master/chai_sales.csv")
 
+show_stats = st.checkbox("Show Summary Stats")
 with st.expander("Show Dataframe"):
   st.dataframe(df)
-  if st.button("Show Summary Stats"):
+  if show_stats:
     st.write(df.describe())
 
 
