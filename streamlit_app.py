@@ -77,7 +77,7 @@ with st.expander("Show Dataframe"):
   st.dataframe(df)
 
 with st.expander("Show Summary Stats:"):
-  if st.button():
+  if st.button(""):
     st.write(df.describe())
 
 
