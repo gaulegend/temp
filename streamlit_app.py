@@ -48,7 +48,11 @@ with col2:
 st.image("""https://images.pexels.com/photos/32117500/pexels-photo-32117500.jpeg?_gl=1*3rw2uj*_ga*NjgzMTcxMTg1LjE3NTEyODgyMTE.*_ga_8JE65Q40S6*czE3NTEyODgyMTEkbzEkZzEkdDE3NTEyODgyNTkkajEyJGwwJGgw""", width=200)
 
 sidebar_items = st.sidebar.selectbox("This is dropdown box", items)
-st.write(f"You've select {select_item}!")
+st.write(f"You've select {sidebar_items}!")
+
+st.sidebar.slider("This is a slider", 0,10,5)
+st.sidebar.checkbox("This is a checkbox",items)
+st.sidebar.radio('Radio button', items)
 
 
 
