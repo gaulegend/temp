@@ -81,12 +81,12 @@ with st.expander("Show Dataframe"):
   if show_stats:
     col1, col2 = st.columns(2)
     with col1:
-      st.markdown("#### Overall Summary Statistics")
+      st.markdown("### Overall Summary Statistics")
       st.write(df.describe())
 
     with col2: 
       cities = df["City"].unique()
-      select_city = st.selectbox("", cities)
+      select_city = st.selectbox("Select Cities", cities)
       if select_city:
         st.write(df[df["City"] == select_city].describe())
 
