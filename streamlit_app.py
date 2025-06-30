@@ -45,7 +45,7 @@ with col1:
 with col2:
   st.subheader("Column 2")
 
-
+st.image("""https://images.pexels.com/photos/32117500/pexels-photo-32117500.jpeg?_gl=1*3rw2uj*_ga*NjgzMTcxMTg1LjE3NTEyODgyMTE.*_ga_8JE65Q40S6*czE3NTEyODgyMTEkbzEkZzEkdDE3NTEyODgyNTkkajEyJGwwJGgw""", width=200)
 
 
 
