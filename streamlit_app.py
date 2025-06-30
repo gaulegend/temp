@@ -86,7 +86,7 @@ with st.expander("Show Dataframe"):
 
     with col2: 
       cities = df["City"].unique()
-      select_city = st.selectbox("Select city", cities)
+      select_city = st.selectbox("", cities)
       if select_city:
         st.write(df[df["City"] == select_city].describe())
 
