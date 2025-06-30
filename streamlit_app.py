@@ -81,7 +81,7 @@ with st.expander("Show Dataframe"):
   if show_stats:
     col1, col2 = st.columns(2)
     with col1:
-      st.header("Overall Summary Statistics")
+      st.subheader("Overall Summary Statistics")
       st.write(df.describe())
 
     with col2: 
