@@ -75,9 +75,7 @@ df = pd.read_csv("https://raw.githubusercontent.com/hiteshchoudhary/Streamlit-co
 
 with st.expander("Show Dataframe"):
   st.dataframe(df)
-
-with st.expander("Show Summary Stats:"):
-  if st.button(""):
+  if st.button("Show Summary Stats"):
     st.write(df.describe())
 
 
