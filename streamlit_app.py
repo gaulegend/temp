@@ -81,10 +81,10 @@ with st.expander("Show Dataframe"):
   if show_stats:
     st.write(df.describe())
     
-  cities = df["City"].unique()
-  select_city = st.selectbox("Select city", cities)
-  if select_city:
-    st.write(df[df["City"] == select_city].describe())
+    cities = df["City"].unique()
+    select_city = st.selectbox("Select city", cities)
+    if select_city:
+      st.write(df[df["City"] == select_city].describe())
 
 
 
