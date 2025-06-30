@@ -53,6 +53,8 @@ st.sidebar.write(f"You've select {sidebar_items}!")
 st.sidebar.slider("This is a slider", 0,10,5)
 st.sidebar.checkbox("This is a checkbox",items)
 st.sidebar.radio('Radio button', items)
-sidebar_text = st.sidebar.text_input("This is text input")
 
+sidebar_text = st.sidebar.text_input("This is text input")
+if sidebar_text:
+  st.sidebar.write(f"Your test: {sidebar_text}!")
 
