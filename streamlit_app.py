@@ -77,9 +77,9 @@ df = pd.read_csv("https://raw.githubusercontent.com/hiteshchoudhary/Streamlit-co
 with st.expander("Show Dataframe"):
   st.dataframe(df)
   show_stats = st.checkbox("Show Summary Stats")
-  
+  col1, col2 = st.columns(2)
   if show_stats:
-    st.write(df.describe())
+    col1 = st.write(df.describe())
     
     cities = df["City"].unique()
     select_city = st.selectbox("Select city", cities)
