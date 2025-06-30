@@ -58,3 +58,12 @@ sidebar_text = st.sidebar.text_input("This is text input")
 if sidebar_text:
   st.sidebar.write(f"Your test: {sidebar_text}!")
 
+with st.expander("This is an expander"):
+  st.write(
+    """
+    1. Line one
+    2. Line two
+    ...
+    3. Line three
+    """
+  )
